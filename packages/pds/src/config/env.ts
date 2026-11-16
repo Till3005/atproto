@@ -165,6 +165,9 @@ export function readEnv() {
     spacesMigrationJitterWindowMs: envInt(
       'PDS_SPACES_MIGRATION_JITTER_WINDOW_MS',
     ),
+    spacesMigrationSweepIntervalMs: envInt(
+      'PDS_SPACES_MIGRATION_SWEEP_INTERVAL_MS',
+    ),
   }
 }
 
