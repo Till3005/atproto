@@ -1,5 +1,17 @@
 # @atproto/bsky
 
+## 0.5.15
+
+### Patch Changes
+
+- Updated dependencies [[`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32)]:
+  - @atproto/lex-client@0.6.0
+  - @atproto/xrpc-server@0.13.14
+  - @atproto/common@0.8.11
+  - @atproto/repo@0.11.6
+  - @atproto/sync@0.4.28
+  - @atproto-labs/xrpc-utils@0.1.35
+
 ## 0.5.14
 
 ### Patch Changes

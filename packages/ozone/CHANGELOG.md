@@ -1,5 +1,16 @@
 # @atproto/ozone
 
+## 0.15.4
+
+### Patch Changes
+
+- Updated dependencies [[`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32), [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32), [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32), [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32)]:
+  - @atproto/ws-client@0.2.2
+  - @atproto/lex-client@0.6.0
+  - @atproto/xrpc-server@0.13.14
+  - @atproto/common@0.8.11
+  - @atproto/lex-password-session@0.3.4
+
 ## 0.15.3
 
 ### Patch Changes

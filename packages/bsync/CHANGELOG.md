@@ -1,5 +1,13 @@
 # @atproto/bsync
 
+## 0.1.11
+
+### Patch Changes
+
+- [#5934](https://github.com/bluesky-social/atproto/pull/5934) [`c310166`](https://github.com/bluesky-social/atproto/commit/c310166de0faf14674a22f0717f8f1260e2b64ff) Thanks [@treethought](https://github.com/treethought)! - Expose operation creation timestamps in Bsync responses.
+- Updated dependencies []:
+  - @atproto/common@0.8.11
+
 ## 0.1.10
 
 ### Patch Changes

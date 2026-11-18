@@ -1,5 +1,11 @@
 # @atproto/lex-cbor
 
+## 0.1.11
+
+### Patch Changes
+
+- [#5930](https://github.com/bluesky-social/atproto/pull/5930) [`118a827`](https://github.com/bluesky-social/atproto/commit/118a82770430c01ed47ded26569fffcbd68afcf4) Thanks [@matthieusieben](https://github.com/matthieusieben)! - Remove the `encodeOptions` and `decodeOptions` exports from `@atproto/lex-cbor`, and so from `@atproto/lex`, which re-exports it. They were internal cborg configuration, not meant to be public; use `encode`, `decode` and `decodeAll` instead.
+
 ## 0.1.10
 
 ### Patch Changes

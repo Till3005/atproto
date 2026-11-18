@@ -1,5 +1,15 @@
 # @atproto/ws-client
 
+## 0.2.2
+
+### Patch Changes
+
+- [#5885](https://github.com/bluesky-social/atproto/pull/5885) [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32) Thanks [@matthieusieben](https://github.com/matthieusieben)! - Stop retrying WebSocket upgrades the server rejects with a non-transient HTTP status (e.g. `404`) on Node.js. A non-101 response now fails the connection with an `UnexpectedResponseError` (exposing `status` and `statusText`), retried only for 408, 425, 429, 500, 502, 503, 504, 522 and 524.
+
+- [#5885](https://github.com/bluesky-social/atproto/pull/5885) [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32) Thanks [@matthieusieben](https://github.com/matthieusieben)! - Declare the package free of side effects (`"sideEffects": false`), so that bundlers can drop it when it is imported but unused.
+
+- [#5885](https://github.com/bluesky-social/atproto/pull/5885) [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32) Thanks [@matthieusieben](https://github.com/matthieusieben)! - A function-valued `url` that throws (or rejects) now fails that connection attempt: the error is classified by `shouldReconnect` and reported to `onReconnect` or `onError`, like any connection failure, instead of rejecting the stream directly.
+
 ## 0.2.1
 
 ### Patch Changes

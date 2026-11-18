@@ -1,5 +1,24 @@
 # @atproto/lex
 
+## 0.6.0
+
+### Minor Changes
+
+- [#5885](https://github.com/bluesky-social/atproto/pull/5885) [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32) Thanks [@matthieusieben](https://github.com/matthieusieben)! - **Breaking:** `RETRYABLE_HTTP_STATUS_CODES` is now a frozen, literal-typed array instead of a `ReadonlySet<number>`. Replace `RETRYABLE_HTTP_STATUS_CODES.has(status)` with the new `isRetryableHttpStatus(status)` type guard (narrowing to the new `RetryableHttpStatus` type).
+  
+  Also add `RETRYABLE_ERROR_CODES` and its `isRetryableErrorCode()` type guard (the XRPC error codes matching a retryable HTTP status, for classifying an error by code alone), and `getStatusErrorCode()`, mapping an HTTP status to the XRPC error code used for non-XRPC error responses.
+
+### Patch Changes
+
+- [#5930](https://github.com/bluesky-social/atproto/pull/5930) [`118a827`](https://github.com/bluesky-social/atproto/commit/118a82770430c01ed47ded26569fffcbd68afcf4) Thanks [@matthieusieben](https://github.com/matthieusieben)! - Remove the `encodeOptions` and `decodeOptions` exports from `@atproto/lex-cbor`, and so from `@atproto/lex`, which re-exports it. They were internal cborg configuration, not meant to be public; use `encode`, `decode` and `decodeAll` instead.
+
+- [#5885](https://github.com/bluesky-social/atproto/pull/5885) [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32) Thanks [@matthieusieben](https://github.com/matthieusieben)! - Re-export XRPC subscription support from `@atproto/lex-rpc/subscription`: `xrpcSubscribe()`, `createWebSocketFactory()`, `defaultWebsocket` and `defaultSubscriptionShouldReconnect()`.
+- Updated dependencies [[`118a827`](https://github.com/bluesky-social/atproto/commit/118a82770430c01ed47ded26569fffcbd68afcf4), [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32), [`6ee0f4d`](https://github.com/bluesky-social/atproto/commit/6ee0f4d7971dcc71efaab785aff4d4ef341a1c32)]:
+  - @atproto/lex-cbor@0.1.11
+  - @atproto/lex-rpc@0.2.0
+  - @atproto/lex-client@0.6.0
+  - @atproto/lex-installer@0.2.10
+
 ## 0.5.0
 
 ### Minor Changes
